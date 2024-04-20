@@ -16,11 +16,16 @@ public class Portal : MonoBehaviour, IPlayerTriggerable
     }
     IEnumerator SwitchScene() {
         DontDestroyOnLoad(gameObject);
+
+        GameController.Instance.PauseGame(true);
+
         yield return SceneManager.LoadSceneAsync(sceneToLoad);
 
         var destPortal = FindObjectsOfType<Portal>().First(x => x != this);
         player.Character.SetPositionAndSnapToTile(destPortal.SpawnPoint.position);
         player.transform.position = destPortal.SpawnPoint.position;
+
+        GameController.Instance.PauseGame(false);
 
         Destroy(gameObject);
     }

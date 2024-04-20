@@ -7,7 +7,7 @@ using UnityEngine;
 // it can hold globals
 
 // List of game states
-public enum GameState { FreeRoam, Task, Dialogue, Cutscene }
+public enum GameState { FreeRoam, Task, Dialogue, Cutscene, Paused }
 
 public class GameController : MonoBehaviour
 {   
@@ -16,6 +16,8 @@ public class GameController : MonoBehaviour
     // [SerializeField] TaskController taskController;
     [SerializeField] DialogueManager dialogueManager;
     GameState state;
+
+    GameState stateBeforePause;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +30,15 @@ public class GameController : MonoBehaviour
             state = GameState.FreeRoam;
             }
         };  
+    }
+
+    public void PauseGame(bool pause) {
+        if (pause == true) {
+            stateBeforePause = state;
+            state = GameState.Paused;
+        } else {
+            state = stateBeforePause;
+        }
     }
 
     // Update is called once per frame
