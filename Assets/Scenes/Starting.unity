@@ -139,8 +139,8 @@ GameObject:
   - component: {fileID: 54272157}
   - component: {fileID: 54272156}
   m_Layer: 9
-  m_Name: realnpc_0 (1)
-  m_TagString: Untagged
+  m_Name: newspaper boy
+  m_TagString: Newspaper Boy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -204,11 +204,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     lines:
-    - AI's gonna end the world, son.
-    - Would be a damn shame you didn't do nothin' about it.
-  movementPattern:
-  - {x: 0, y: -2}
-  - {x: 0, y: 2}
+    - Hey! Check out the news today!
+  movementPattern: []
   timeBetweenPattern: 3
   sprites:
   - {fileID: -1423768653, guid: 73e51fac3efae4f26b600e667fc4979e, type: 3}
@@ -244,7 +241,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00941658, y: -0.27293426}
+  m_Offset: {x: 0.00941658, y: -0.9128665}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -255,7 +252,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8954487, y: 1.0006288}
+  m_Size: {x: 0.8954487, y: 2.280493}
   m_EdgeRadius: 0
 --- !u!50 &54272160
 Rigidbody2D:
@@ -322,8 +319,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1769420355
-  m_SortingLayer: 4
+  m_SortingLayerID: -2000980785
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: -1423768653, guid: 73e51fac3efae4f26b600e667fc4979e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -345,7 +342,7 @@ Transform:
   m_GameObject: {fileID: 54272155}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.5, y: -1.02, z: 0}
+  m_LocalPosition: {x: 35.5, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -80101,6 +80098,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 129379777}
   m_CullTransparentMesh: 1
+--- !u!20 &192682291 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 6899283335808857407, guid: a1be4517f3d924196ac94103e977741d, type: 3}
+  m_PrefabInstance: {fileID: 9082450575811651058}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &216205370
 GameObject:
   m_ObjectHideFlags: 0
@@ -81122,6 +81124,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerController: {fileID: 4515861133770379617}
   dialogueManager: {fileID: 0}
+  newspaperManager: {fileID: 1684781366}
+  worldCamera: {fileID: 192682291}
+  state: 0
+  day: 1
+  playerName: Guest
 --- !u!4 &1370917832
 Transform:
   m_ObjectHideFlags: 0
@@ -81408,13 +81415,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1684781365}
+  - component: {fileID: 1684781366}
   m_Layer: 0
   m_Name: Newspaper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1684781365
 Transform:
   m_ObjectHideFlags: 0
@@ -81432,6 +81440,22 @@ Transform:
   - {fileID: 64628180}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1684781366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1684781364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b9e64088de0948e2b2c21ccb7cd98e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title1: {fileID: 1559777830}
+  title2: {fileID: 803240897}
+  title3: {fileID: 1937348248}
+  headline: {fileID: 1913794578}
 --- !u!1 &1826006785
 GameObject:
   m_ObjectHideFlags: 0
@@ -81943,11 +81967,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2865024373637433667, guid: a1be4517f3d924196ac94103e977741d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.5
+      value: 35.5
       objectReference: {fileID: 0}
     - target: {fileID: 2865024373637433667, guid: a1be4517f3d924196ac94103e977741d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.8
+      value: -3.5
       objectReference: {fileID: 0}
     - target: {fileID: 2865024373637433667, guid: a1be4517f3d924196ac94103e977741d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -81981,9 +82005,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6591277330423955785, guid: a1be4517f3d924196ac94103e977741d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8832021385764692612, guid: a1be4517f3d924196ac94103e977741d, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8832021385764692612, guid: a1be4517f3d924196ac94103e977741d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
+using Unity.VisualScripting;
 using UnityEngine;
 
 // This script runs permanently, is basically used...
@@ -7,7 +9,7 @@ using UnityEngine;
 // it can hold globals
 
 // List of game states
-public enum GameState { FreeRoam, Task, Dialogue, Cutscene }
+public enum GameState { FreeRoam, Task, Dialogue, Cutscene, Newspaper }
 
 public class GameController : MonoBehaviour
 {   
@@ -15,7 +17,12 @@ public class GameController : MonoBehaviour
     [SerializeField] PlayerController playerController;
     // [SerializeField] TaskController taskController;
     [SerializeField] DialogueManager dialogueManager;
-    GameState state;
+    [SerializeField] NewspaperText newspaperManager;
+    [SerializeField] Camera worldCamera;
+
+    public GameState state;
+    public int day = 0;
+    public string playerName = "Guest";
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +35,15 @@ public class GameController : MonoBehaviour
             state = GameState.FreeRoam;
             }
         };  
+
+        newspaperManager.OnNewspaperFinished += EndNewspaper;
+    }
+
+    void EndNewspaper()
+    {
+        state = GameState.FreeRoam;
+        newspaperManager.gameObject.SetActive(false);
+        worldCamera.gameObject.SetActive(true);
     }
 
     // Update is called once per frame
@@ -40,6 +56,12 @@ public class GameController : MonoBehaviour
             // taskController.HandleUpdate();
         } else if (state == GameState.Dialogue) {
             DialogueManager.Instance.HandleUpdate();
+        }
+        else if (state == GameState.Newspaper)
+        {
+            newspaperManager.gameObject.SetActive(true);
+            worldCamera.gameObject.SetActive(false);
+            newspaperManager.HandleUpdate();
         }
     }
 
