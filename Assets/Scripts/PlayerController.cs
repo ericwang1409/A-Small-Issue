@@ -7,7 +7,6 @@ public class PlayerController : MonoBehaviour
     // 5:41 for the whole file video 40
     private Vector2 input;
     private Character character;
-    const float offsetY = 0.3f;
 
     // something that talks to animator to make it go?
     private void Awake()
@@ -23,7 +22,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnMoveOver()
     {
-        var colliders = Physics2D.OverlapCircleAll(transform.position - new Vector3(0, offsetY), 0.2f, GameLayers.i.TriggerableLayers);
+        var colliders = Physics2D.OverlapCircleAll(transform.position - new Vector3(0, character.OffsetY), 0.2f, GameLayers.i.TriggerableLayers);
 
         foreach (var collider in colliders)
         {
@@ -77,4 +76,5 @@ public class PlayerController : MonoBehaviour
             collider.GetComponent<Interactable>()?.Interact(transform);
         }
     }
+    public Character Character => character;
 }
