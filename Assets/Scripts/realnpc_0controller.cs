@@ -63,7 +63,8 @@ public class realnpc_0controller : MonoBehaviour, Interactable
     }
 
     public void Interact(Transform initiator) {
-        if (state == NPCState.Idle)
+        if (state == NPCState.Idle && !gameObject.CompareTag("Newspaper Boy"))
+        {
             state = NPCState.Dialogue;
             character.LookTowards(initiator.position);
 
@@ -71,6 +72,18 @@ public class realnpc_0controller : MonoBehaviour, Interactable
                 idleTimer = 0f;
                 state = NPCState.Idle;
             }));
+        }
+        else if (state == NPCState.Idle && gameObject.CompareTag("Newspaper Boy"))
+        {
+            state = NPCState.Dialogue;
+            character.LookTowards(initiator.position);
+
+            StartCoroutine(DialogueManager.Instance.ShowDialogue(dialogue, () => {
+                idleTimer = 0f;
+                state = NPCState.Idle;
+                GameController.Instance.state = GameState.Newspaper;
+            }));
+        }
     }
 }
 
