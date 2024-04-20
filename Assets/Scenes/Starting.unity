@@ -79926,6 +79926,10 @@ PrefabInstance:
       propertyPath: sceneToLoad
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5700675021487289178, guid: 6b816335ed5f8480daa2fa0b22f307d2, type: 3}
+      propertyPath: destinationPortal
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7917811184474927047, guid: 6b816335ed5f8480daa2fa0b22f307d2, type: 3}
       propertyPath: m_Name
       value: Portal (1)
@@ -80333,6 +80337,10 @@ PrefabInstance:
       propertyPath: sceneToLoad
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 5700675021487289178, guid: 6b816335ed5f8480daa2fa0b22f307d2, type: 3}
+      propertyPath: destinationPortal
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7917811184474927047, guid: 6b816335ed5f8480daa2fa0b22f307d2, type: 3}
       propertyPath: m_Name
       value: Portal (3)
@@ -80465,6 +80473,10 @@ PrefabInstance:
     - target: {fileID: 5700675021487289178, guid: 6b816335ed5f8480daa2fa0b22f307d2, type: 3}
       propertyPath: sceneToLoad
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5700675021487289178, guid: 6b816335ed5f8480daa2fa0b22f307d2, type: 3}
+      propertyPath: destinationPortal
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7917811184474927047, guid: 6b816335ed5f8480daa2fa0b22f307d2, type: 3}
       propertyPath: m_Name

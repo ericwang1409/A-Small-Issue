@@ -5855,6 +5855,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5700675021487289178, guid: 6b816335ed5f8480daa2fa0b22f307d2, type: 3}
+      propertyPath: sceneToLoad
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5700675021487289178, guid: 6b816335ed5f8480daa2fa0b22f307d2, type: 3}
+      propertyPath: destinationPortal
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7917811184474927047, guid: 6b816335ed5f8480daa2fa0b22f307d2, type: 3}
       propertyPath: m_Name
       value: Portal
