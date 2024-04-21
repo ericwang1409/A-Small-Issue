@@ -83,6 +83,18 @@ public class realnpc_0controller : MonoBehaviour, Interactable
                 state = NPCState.Idle;
             }));
         }
+        else if (state == NPCState.Idle && gameObject.CompareTag("Newspaper Boy") && DayTracker.Instance.Day == 0)
+        {
+            state = NPCState.Dialogue;
+            character.LookTowards(initiator.position);
+
+            StartCoroutine(DialogueManager.Instance.ShowDialogue(dialogue0, () => {
+                idleTimer = 0f;
+                state = NPCState.Idle;
+                GameController.Instance.state = GameState.Newspaper;
+                DayTracker.Instance.Day = 1;
+            }));
+        }
         else if (state == NPCState.Idle && gameObject.CompareTag("Newspaper Boy"))
         {
             state = NPCState.Dialogue;
@@ -111,6 +123,7 @@ public class realnpc_0controller : MonoBehaviour, Interactable
             StartCoroutine(DialogueManager.Instance.ShowDialogue(dialogue1, () => {
                 idleTimer = 0f;
                 state = NPCState.Idle;
+                DayTracker.Instance.Day = 2;
             }));
         }
         else if (state == NPCState.Idle && gameObject.CompareTag("Spy") && DayTracker.Instance.Day == 2)
@@ -169,6 +182,30 @@ public class realnpc_0controller : MonoBehaviour, Interactable
             StartCoroutine(DialogueManager.Instance.ShowDialogue(dialoguesList[dialogueOption], () => {
                 idleTimer = 0f;
                 state = NPCState.Idle;
+            }));
+        }
+        else if (state == NPCState.Idle && gameObject.CompareTag("RoomComputer"))
+        {
+            state = NPCState.Dialogue;
+            character.LookTowards(initiator.position);
+
+            StartCoroutine(DialogueManager.Instance.ShowDialogue(dialoguesList[DayTracker.Instance.Day], () => {
+                idleTimer = 0f;
+                state = NPCState.Idle;
+                if (DayTracker.Instance.Day == 3)
+                    DayTracker.Instance.Day = 4;
+            }));
+        }
+        else if (state == NPCState.Idle && gameObject.CompareTag("LabComputer"))
+        {
+            state = NPCState.Dialogue;
+            character.LookTowards(initiator.position);
+
+            StartCoroutine(DialogueManager.Instance.ShowDialogue(dialoguesList[DayTracker.Instance.Day], () => {
+                idleTimer = 0f;
+                state = NPCState.Idle;
+                if (DayTracker.Instance.Day == 2)
+                    DayTracker.Instance.Day = 3;
             }));
         }
     }

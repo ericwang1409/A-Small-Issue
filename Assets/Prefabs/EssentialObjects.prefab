@@ -454,7 +454,9 @@ MonoBehaviour:
   grunt: {fileID: 5385008902845101525}
   coffeeLady: {fileID: 3820843338367948628}
   townNPC: {fileID: 0}
+  personalComputer: {fileID: 5167010223059015631}
   endScreenTrigger: {fileID: 4318326035227966225}
+  labComputer: {fileID: 2195817043818783562}
 --- !u!114 &7679593152378368397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -803,6 +805,8 @@ Transform:
   - {fileID: 4592020214735069412}
   - {fileID: 8659384957176948530}
   - {fileID: 8661856362056004964}
+  - {fileID: 6517148670319232963}
+  - {fileID: 8241424129360643043}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4311979190433817007
@@ -2038,6 +2042,77 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef6f6d1cbf3f64201af59444d50b4ba3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &1964310162600125862
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7008418508833104251}
+    m_Modifications:
+    - target: {fileID: 4698153265537344101, guid: 4dc9b285fde5e49b7ac1582b567188b9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.392895
+      objectReference: {fileID: 0}
+    - target: {fileID: 4698153265537344101, guid: 4dc9b285fde5e49b7ac1582b567188b9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.072648406
+      objectReference: {fileID: 0}
+    - target: {fileID: 4698153265537344101, guid: 4dc9b285fde5e49b7ac1582b567188b9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.05963314
+      objectReference: {fileID: 0}
+    - target: {fileID: 4698153265537344101, guid: 4dc9b285fde5e49b7ac1582b567188b9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4698153265537344101, guid: 4dc9b285fde5e49b7ac1582b567188b9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4698153265537344101, guid: 4dc9b285fde5e49b7ac1582b567188b9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4698153265537344101, guid: 4dc9b285fde5e49b7ac1582b567188b9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4698153265537344101, guid: 4dc9b285fde5e49b7ac1582b567188b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4698153265537344101, guid: 4dc9b285fde5e49b7ac1582b567188b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4698153265537344101, guid: 4dc9b285fde5e49b7ac1582b567188b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698622599746220649, guid: 4dc9b285fde5e49b7ac1582b567188b9, type: 3}
+      propertyPath: m_Name
+      value: RoomComputer
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698622599746220649, guid: 4dc9b285fde5e49b7ac1582b567188b9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4dc9b285fde5e49b7ac1582b567188b9, type: 3}
+--- !u!1 &5167010223059015631 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6698622599746220649, guid: 4dc9b285fde5e49b7ac1582b567188b9, type: 3}
+  m_PrefabInstance: {fileID: 1964310162600125862}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6517148670319232963 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4698153265537344101, guid: 4dc9b285fde5e49b7ac1582b567188b9, type: 3}
+  m_PrefabInstance: {fileID: 1964310162600125862}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2012446241974820955
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2102,6 +2177,66 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4301458164482015365, guid: d5d9ced8e8a71425caecbd0e497fa248, type: 3}
+      propertyPath: dialogue1.lines.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301458164482015365, guid: d5d9ced8e8a71425caecbd0e497fa248, type: 3}
+      propertyPath: dialogue2.lines.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301458164482015365, guid: d5d9ced8e8a71425caecbd0e497fa248, type: 3}
+      propertyPath: dialogue3.lines.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301458164482015365, guid: d5d9ced8e8a71425caecbd0e497fa248, type: 3}
+      propertyPath: dialogue1.lines.Array.data[0]
+      value: I'm busy... come back later.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301458164482015365, guid: d5d9ced8e8a71425caecbd0e497fa248, type: 3}
+      propertyPath: dialogue1.lines.Array.data[1]
+      value: I want you to train a 10 trillion parameter model, it's our next system.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301458164482015365, guid: d5d9ced8e8a71425caecbd0e497fa248, type: 3}
+      propertyPath: dialogue1.lines.Array.data[2]
+      value: Go work on it on the computer in the lab.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301458164482015365, guid: d5d9ced8e8a71425caecbd0e497fa248, type: 3}
+      propertyPath: dialogue2.lines.Array.data[0]
+      value: 'Welcome to the lab! '
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301458164482015365, guid: d5d9ced8e8a71425caecbd0e497fa248, type: 3}
+      propertyPath: dialogue2.lines.Array.data[1]
+      value: We're working on amazing new AI technology!
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301458164482015365, guid: d5d9ced8e8a71425caecbd0e497fa248, type: 3}
+      propertyPath: dialogue2.lines.Array.data[2]
+      value: I want you to train a 10 trillion parameter model. it's our next system.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301458164482015365, guid: d5d9ced8e8a71425caecbd0e497fa248, type: 3}
+      propertyPath: dialogue2.lines.Array.data[3]
+      value: It's our next system.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301458164482015365, guid: d5d9ced8e8a71425caecbd0e497fa248, type: 3}
+      propertyPath: dialogue2.lines.Array.data[4]
+      value: Go work on it on the computer in the lab.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301458164482015365, guid: d5d9ced8e8a71425caecbd0e497fa248, type: 3}
+      propertyPath: dialogue3.lines.Array.data[0]
+      value: I think we might be being monitored...
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301458164482015365, guid: d5d9ced8e8a71425caecbd0e497fa248, type: 3}
+      propertyPath: dialogue3.lines.Array.data[1]
+      value: We need to finish our big training run, but we can't do it here.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301458164482015365, guid: d5d9ced8e8a71425caecbd0e497fa248, type: 3}
+      propertyPath: dialogue3.lines.Array.data[2]
+      value: Train the model at home, and then come back to the lab.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301458164482015365, guid: d5d9ced8e8a71425caecbd0e497fa248, type: 3}
+      propertyPath: dialogue3.lines.Array.data[3]
+      value: Be quick! And don't let anyone see you.
+      objectReference: {fileID: 0}
     - target: {fileID: 6553970557010678867, guid: d5d9ced8e8a71425caecbd0e497fa248, type: 3}
       propertyPath: m_Name
       value: Scientist
@@ -2124,6 +2259,97 @@ Transform:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6553970557010678867, guid: d5d9ced8e8a71425caecbd0e497fa248, type: 3}
   m_PrefabInstance: {fileID: 2012446241974820955}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3376004618512705749
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7008418508833104251}
+    m_Modifications:
+    - target: {fileID: 3504048621330238367, guid: e5bbfa86b4fcb4a92b9b3f4102ed8b77, type: 3}
+      propertyPath: m_Name
+      value: LabComputer
+      objectReference: {fileID: 0}
+    - target: {fileID: 3504048621330238367, guid: e5bbfa86b4fcb4a92b9b3f4102ed8b77, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6667176573249579830, guid: e5bbfa86b4fcb4a92b9b3f4102ed8b77, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.392895
+      objectReference: {fileID: 0}
+    - target: {fileID: 6667176573249579830, guid: e5bbfa86b4fcb4a92b9b3f4102ed8b77, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.072648406
+      objectReference: {fileID: 0}
+    - target: {fileID: 6667176573249579830, guid: e5bbfa86b4fcb4a92b9b3f4102ed8b77, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.05963314
+      objectReference: {fileID: 0}
+    - target: {fileID: 6667176573249579830, guid: e5bbfa86b4fcb4a92b9b3f4102ed8b77, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6667176573249579830, guid: e5bbfa86b4fcb4a92b9b3f4102ed8b77, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6667176573249579830, guid: e5bbfa86b4fcb4a92b9b3f4102ed8b77, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6667176573249579830, guid: e5bbfa86b4fcb4a92b9b3f4102ed8b77, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6667176573249579830, guid: e5bbfa86b4fcb4a92b9b3f4102ed8b77, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6667176573249579830, guid: e5bbfa86b4fcb4a92b9b3f4102ed8b77, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6667176573249579830, guid: e5bbfa86b4fcb4a92b9b3f4102ed8b77, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477217461668764231, guid: e5bbfa86b4fcb4a92b9b3f4102ed8b77, type: 3}
+      propertyPath: dialogue2.lines.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477217461668764231, guid: e5bbfa86b4fcb4a92b9b3f4102ed8b77, type: 3}
+      propertyPath: dialogue2.lines.Array.data[1]
+      value: 'A model this size might have unpredictable '
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477217461668764231, guid: e5bbfa86b4fcb4a92b9b3f4102ed8b77, type: 3}
+      propertyPath: dialogue2.lines.Array.data[2]
+      value: dangerous capabilities.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477217461668764231, guid: e5bbfa86b4fcb4a92b9b3f4102ed8b77, type: 3}
+      propertyPath: dialogue2.lines.Array.data[3]
+      value: Proceed with training anyways? ...yes
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477217461668764231, guid: e5bbfa86b4fcb4a92b9b3f4102ed8b77, type: 3}
+      propertyPath: dialogue2.lines.Array.data[4]
+      value: MODEL TRAINED
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e5bbfa86b4fcb4a92b9b3f4102ed8b77, type: 3}
+--- !u!1 &2195817043818783562 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3504048621330238367, guid: e5bbfa86b4fcb4a92b9b3f4102ed8b77, type: 3}
+  m_PrefabInstance: {fileID: 3376004618512705749}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &8241424129360643043 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6667176573249579830, guid: e5bbfa86b4fcb4a92b9b3f4102ed8b77, type: 3}
+  m_PrefabInstance: {fileID: 3376004618512705749}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5038105680666934451
 PrefabInstance:
@@ -2270,15 +2496,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7959405160104887246, guid: 18e6b8235b4894301b5707edffabe4a2, type: 3}
       propertyPath: dialogue0.lines.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7959405160104887246, guid: 18e6b8235b4894301b5707edffabe4a2, type: 3}
       propertyPath: dialogue1.lines.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7959405160104887246, guid: 18e6b8235b4894301b5707edffabe4a2, type: 3}
       propertyPath: dialogue2.lines.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7959405160104887246, guid: 18e6b8235b4894301b5707edffabe4a2, type: 3}
       propertyPath: dialogue3.lines.Array.size
@@ -2286,23 +2512,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7959405160104887246, guid: 18e6b8235b4894301b5707edffabe4a2, type: 3}
       propertyPath: dialogue0.lines.Array.data[0]
-      value: Hey son!
+      value: Hey old sport.
       objectReference: {fileID: 0}
     - target: {fileID: 7959405160104887246, guid: 18e6b8235b4894301b5707edffabe4a2, type: 3}
       propertyPath: dialogue0.lines.Array.data[1]
-      value: You know anything about that AI lab northeast of town?
+      value: You know anything about that
+      objectReference: {fileID: 0}
+    - target: {fileID: 7959405160104887246, guid: 18e6b8235b4894301b5707edffabe4a2, type: 3}
+      propertyPath: dialogue0.lines.Array.data[2]
+      value: AI lab northeast of town?
       objectReference: {fileID: 0}
     - target: {fileID: 7959405160104887246, guid: 18e6b8235b4894301b5707edffabe4a2, type: 3}
       propertyPath: dialogue1.lines.Array.data[0]
-      value: Gee... nice books!
+      value: Heard you're in the news.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7959405160104887246, guid: 18e6b8235b4894301b5707edffabe4a2, type: 3}
+      propertyPath: dialogue1.lines.Array.data[1]
+      value: You should be careful around Shady Inc.
       objectReference: {fileID: 0}
     - target: {fileID: 7959405160104887246, guid: 18e6b8235b4894301b5707edffabe4a2, type: 3}
       propertyPath: dialogue2.lines.Array.data[0]
-      value: Huff...
+      value: The government has strong whistleblower protections
       objectReference: {fileID: 0}
     - target: {fileID: 7959405160104887246, guid: 18e6b8235b4894301b5707edffabe4a2, type: 3}
       propertyPath: dialogue2.lines.Array.data[1]
-      value: Huff...
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7959405160104887246, guid: 18e6b8235b4894301b5707edffabe4a2, type: 3}
       propertyPath: dialogue3.lines.Array.data[0]
@@ -2395,8 +2629,36 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7984062733463499430, guid: a40fe3a2cfa424bada3816bfdea41419, type: 3}
+      propertyPath: dialogue0.lines.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7984062733463499430, guid: a40fe3a2cfa424bada3816bfdea41419, type: 3}
+      propertyPath: dialogue3.lines.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7984062733463499430, guid: a40fe3a2cfa424bada3816bfdea41419, type: 3}
+      propertyPath: dialogue0.lines.Array.data[0]
+      value: Wow! Your resume's amazing.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7984062733463499430, guid: a40fe3a2cfa424bada3816bfdea41419, type: 3}
+      propertyPath: dialogue0.lines.Array.data[3]
+      value: We're gonna have you read up on some ML
+      objectReference: {fileID: 0}
+    - target: {fileID: 7984062733463499430, guid: a40fe3a2cfa424bada3816bfdea41419, type: 3}
+      propertyPath: dialogue0.lines.Array.data[4]
+      value: in the library
+      objectReference: {fileID: 0}
+    - target: {fileID: 7984062733463499430, guid: a40fe3a2cfa424bada3816bfdea41419, type: 3}
+      propertyPath: dialogue0.lines.Array.data[5]
+      value: and then come to the lab!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7984062733463499430, guid: a40fe3a2cfa424bada3816bfdea41419, type: 3}
       propertyPath: dialogue2.lines.Array.data[0]
       value: Hi! You should check out the news board!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7984062733463499430, guid: a40fe3a2cfa424bada3816bfdea41419, type: 3}
+      propertyPath: dialogue3.lines.Array.data[0]
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

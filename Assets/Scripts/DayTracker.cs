@@ -13,7 +13,9 @@ public class DayTracker : MonoBehaviour
     public GameObject grunt;
     public GameObject coffeeLady;
     public GameObject townNPC;
+    public GameObject personalComputer;
     public GameObject endScreenTrigger;
+    public GameObject labComputer;
 
     public event Action DayChanged;
 
@@ -64,14 +66,13 @@ public class DayTracker : MonoBehaviour
             spy.SetActive(true);
             spy.transform.position = new Vector3(4.4f, 3.6f, 0);
         }
-        else if (DayTracker.Instance.Day == 2 && UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Starting")
+        else if ((DayTracker.Instance.Day == 2 || DayTracker.Instance.Day == 3) && UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Starting")
         {
             spy.SetActive(true);
             spy.transform.position = new Vector3(-3.2f, 0.8f, 0);
         }
-        else if (DayTracker.Instance.Day == 3 && UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Starting")
+        else if (DayTracker.Instance.Day == 4 && UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Starting")
         {
-            Debug.Log("Day 3");
             spy.SetActive(true);
             endScreenTrigger.SetActive(true);
             spy.transform.position = new Vector3(39, 4.4f, 0);
@@ -82,7 +83,7 @@ public class DayTracker : MonoBehaviour
         }
 
         // scientist
-        if (DayTracker.Instance.Day >= 0 && DayTracker.Instance.Day <= 3 && UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "LabTopFloor")
+        if (DayTracker.Instance.Day >= 0 && DayTracker.Instance.Day <= 4 && UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "LabTopFloor")
         {
             scientist.SetActive(true);
             scientist.transform.position = new Vector3(-4.5f, 3.8f, 0);
@@ -93,7 +94,7 @@ public class DayTracker : MonoBehaviour
         }
 
         // grunt
-        if (DayTracker.Instance.Day >= 0 && DayTracker.Instance.Day <= 3 && UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "LabBottomFloor")
+        if (DayTracker.Instance.Day >= 0 && DayTracker.Instance.Day <= 4 && UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "LabBottomFloor")
         {
             grunt.SetActive(true);
             grunt.transform.position = new Vector3(-0.5f, -0.2f, 0);
@@ -103,7 +104,7 @@ public class DayTracker : MonoBehaviour
             grunt.SetActive(false);
         }
 
-        if (DayTracker.Instance.Day >= 0 && DayTracker.Instance.Day <= 3 && UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "CoffeeShop")
+        if (DayTracker.Instance.Day >= 0 && DayTracker.Instance.Day <= 4 && UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "CoffeeShop")
         {
             coffeeLady.SetActive(true);
             coffeeLady.transform.position = new Vector3(3.5f, 3f, 0);
@@ -111,6 +112,26 @@ public class DayTracker : MonoBehaviour
         else
         {
             coffeeLady.SetActive(false);
+        }
+
+        if (DayTracker.Instance.Day >= 0 && DayTracker.Instance.Day <= 4 && UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "PlayerHouse")
+        {
+            personalComputer.SetActive(true);
+            personalComputer.transform.position = new Vector3(-4.5f, 2.46f, 0);
+        }
+        else
+        {
+            personalComputer.SetActive(false);
+        }
+
+        if (DayTracker.Instance.Day >= 0 && DayTracker.Instance.Day <= 4 && UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "LabBottomFloor")
+        {
+            labComputer.SetActive(true);
+            labComputer.transform.position = new Vector3(2.5f, 5.5f, 0);
+        }
+        else
+        {
+            labComputer.SetActive(false);
         }
     }
 

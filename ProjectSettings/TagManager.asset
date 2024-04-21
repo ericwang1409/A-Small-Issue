@@ -9,6 +9,8 @@ TagManager:
   - Scientist
   - Grunt
   - CoffeeLady
+  - RoomComputer
+  - LabComputer
   layers:
   - Default
   - TransparentFX
