@@ -331,6 +331,7 @@ MonoBehaviour:
   worldCamera: {fileID: 5331943556758187666}
   state: 0
   day: 0
+  gameStage: 0
   playerName: Guest
 --- !u!114 &8551558834310433205
 MonoBehaviour:
@@ -1494,7 +1495,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8972102546895929587, guid: a1be4517f3d924196ac94103e977741d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6272015736286891358}
   m_SourcePrefab: {fileID: 100100000, guid: a1be4517f3d924196ac94103e977741d, type: 3}
 --- !u!4 &3567818153320207086 stripped
 Transform:
@@ -1506,6 +1510,76 @@ Camera:
   m_CorrespondingSourceObject: {fileID: 6899283335808857407, guid: a1be4517f3d924196ac94103e977741d, type: 3}
   m_PrefabInstance: {fileID: 1603830990905121709}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7692918315621391198 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8972102546895929587, guid: a1be4517f3d924196ac94103e977741d, type: 3}
+  m_PrefabInstance: {fileID: 1603830990905121709}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6272015736286891358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7692918315621391198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5433adeed282f44c28be37229e4cf149, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  start: 0
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0.0016123175
+      value: 0.0008045733
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.14676516
+      value: 0.25568992
+      inSlope: -0.036023937
+      outSlope: -0.036023937
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.40157488
+      value: 0.056535885
+      inSlope: -0.5481119
+      outSlope: -0.5481119
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.59809756
+      value: 0.5031353
+      inSlope: 0.7317676
+      outSlope: 0.7317676
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.9509752
+      value: -0.031083345
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  duration: 5
 --- !u!114 &7895477413407607916 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8922665682432055233, guid: a1be4517f3d924196ac94103e977741d, type: 3}

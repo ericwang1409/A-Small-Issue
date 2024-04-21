@@ -24,6 +24,7 @@ public class GameController : MonoBehaviour
     public GameState state;
 
     public int day = 0;
+    public int gameStage = 0;
     public string playerName = "Guest";
     // Start is called before the first frame update
     void Start()
