@@ -502,6 +502,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2982093508210789090}
+  - {fileID: 6559842604786127808}
   m_Father: {fileID: 7008418508833104251}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -572,6 +573,114 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!1 &3322469862327637591
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6559842604786127808}
+  - component: {fileID: 31097814966623608}
+  - component: {fileID: 6092009262104800615}
+  - component: {fileID: 4838913403119806795}
+  m_Layer: 5
+  m_Name: Text (Legacy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &6559842604786127808
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3322469862327637591}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2070784242716022255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1000, y: 500}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &31097814966623608
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3322469862327637591}
+  m_CullTransparentMesh: 1
+--- !u!114 &6092009262104800615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3322469862327637591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.9487362, g: 0.9649342, b: 0.9811321, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 96283bf5788f84691985ead587bf4e03, type: 3}
+    m_FontSize: 75
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 75
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!114 &4838913403119806795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3322469862327637591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fe821132a1c748eb882e654e61dca9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  displayText: {fileID: 6092009262104800615}
+  lines:
+  - Despite   precautions,  Shady  inc.  was  unable  to  control  the  AI  they 
+    sought  to  create.
+  - Not  even  the  government  could  slow  humanity's  creative  drive.
+  - 'Soon  after,  the  escaped  AI  system  caused  catastrophic  damage. '
+  - It  upended  the  progress  of  thousands  of  researchers  and  risked  human 
+    extinction.
+  - In  the  end,  the  choices  of  a  few  dictated  the  fate  of  humanity.
+  - AI  is  sure  to  bring  many  great  benefits  to  humankind.
+  - But  we  must  proceed  with  caution.
+  - Do  not  go  gentle  into  that  good  night.
+  - Old  age  should  burn  and  rave  at  close  of  day;
+  - Rage,  rage,  against  the  dying  of  the  light.
+  displayTime: 3
+  fadeTime: 1
 --- !u!1 &3463939485608989424
 GameObject:
   m_ObjectHideFlags: 0
@@ -1912,6 +2021,8 @@ MonoBehaviour:
     m_RotationOrder: 4
   duration: 10
   fadeImage: {fileID: 959684312887378078}
+  dialogueText: {fileID: 2383226519087136402}
+  textSequencer: {fileID: 4838913403119806795}
 --- !u!114 &7895477413407607916 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8922665682432055233, guid: a1be4517f3d924196ac94103e977741d, type: 3}

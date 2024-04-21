@@ -10,6 +10,9 @@ public class CameraShaker : MonoBehaviour
     public Image fadeImage;
     private bool isShaking = false;
 
+    public GameObject dialogueText;
+
+    public TextSequencer textSequencer;
     public void StartShaking()
     {
         if (!isShaking)
@@ -37,6 +40,7 @@ public class CameraShaker : MonoBehaviour
         transform.localPosition = startPosition;
         isShaking = false;
         StartCoroutine(FadeToBlack());
+        dialogueText.SetActive(false);
     }
     IEnumerator FadeToBlack()
     {
@@ -61,7 +65,9 @@ public class CameraShaker : MonoBehaviour
             fadeImage.color = new Color(fadeImage.color.r, fadeImage.color.g, fadeImage.color.b, newAlpha);
             yield return null;
         }
+        yield return new WaitForSeconds(1.0f);
 
+        textSequencer.StartTextSequence();
         
     }
 }
