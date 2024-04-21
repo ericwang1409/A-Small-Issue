@@ -15,26 +15,33 @@ public class NewspaperText : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (GameController.Instance.day == 1)
+        if (GameController.Instance.day == 0)
         {
-            title1.text = GameController.Instance.playerName + " 1";
-            title2.text = "1";
-            title3.text = "1";
-            headline.text = "1";
+            title1.text = GameController.Instance.playerName + " NEW AI DEVELOPMENTS @ LAB";
+            title2.text = "HACKATHON @ DARTMOUTH";
+            title3.text = "CONSIDER A COFFEE";
+            headline.text = "HELP WANTED: AI LAB, APPLY ON YOUR COMPUTER AT HOME";
+        }
+        else if (GameController.Instance.day == 1)
+        {
+            title1.text = GameController.Instance.playerName + " WHISPERS OF ROGUE AI @ LAB";
+            title2.text = "CODED BY ERIC, COLE, RYAN";
+            title3.text = "SUPPORT YOUR LOCAL LIBRARY";
+            headline.text = "NEW HIRE: AI LABS PICK " + GameController.Instance.playerName;
         }
         else if (GameController.Instance.day == 2)
         {
-            title1.text = "2";
-            title2.text = "2";
-            title3.text = "2";
-            headline.text = "2";
+            title1.text = "LEAKS OF UNSAFE AI REPORTED BY CIA";
+            title2.text = "DEVELOPED IN UNITY";
+            title3.text = "DOWNLOAD A VPN";
+            headline.text = "MYSTERIOUS MAN SPOTTED IN TOWN: WHO DOES HE WORK FOR?";
         }
         else if (GameController.Instance.day == 3)
         {
-            title1.text = "3";
-            title2.text = "3";
-            title3.text = "3";
-            headline.text = "3";
+            title1.text = "THE END IS HERE";
+            title2.text = "04/20/2024";
+            title3.text = "SUPPORT AI SAFETY MEASURES";
+            headline.text = "ROGUE AI ENDS WORLD";
         }
         else if (GameController.Instance.day == 4)
         {
@@ -96,3 +103,4 @@ public class NewspaperText : MonoBehaviour
         }
     }
 }
+
