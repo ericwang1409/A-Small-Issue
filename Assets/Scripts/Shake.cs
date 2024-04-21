@@ -15,7 +15,7 @@ public class CameraShaker : MonoBehaviour
         if (!isShaking)
         {
             StartCoroutine(Shaking());
-            StartCoroutine(FadeToBlack());
+
         }
     }
 
@@ -36,6 +36,7 @@ public class CameraShaker : MonoBehaviour
 
         transform.localPosition = startPosition;
         isShaking = false;
+        StartCoroutine(FadeToBlack());
     }
     IEnumerator FadeToBlack()
     {
@@ -43,6 +44,13 @@ public class CameraShaker : MonoBehaviour
         float startAlpha = 0f;
         float endAlpha = 1f;
         float elapsedTime = 0f;
+
+        //Debug.Log("Starting Fade to Black");
+
+        if (!fadeImage.gameObject.activeInHierarchy)
+    {
+        fadeImage.gameObject.SetActive(true);
+    }
 
         while (elapsedTime < fadeTime)
         {

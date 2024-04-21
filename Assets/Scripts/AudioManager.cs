@@ -40,9 +40,11 @@ public class AudioManager : MonoBehaviour
             //Debug.LogWarning("Playing day 2 music");
             return dayMusicTracks[1];
         }
-        else if (day >= 2 && dayMusicTracks.Count > 2) {
+        else if (day == 2 && dayMusicTracks.Count > 2) {
            // Debug.LogWarning("Playing day 3+ music");
             return dayMusicTracks[2];
+        } else if (day == 3 && dayMusicTracks.Count > 3) {
+            return dayMusicTracks[3];
         }
 
         return dayMusicTracks[dayMusicTracks.Count - 1]; 
