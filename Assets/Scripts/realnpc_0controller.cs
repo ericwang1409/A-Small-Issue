@@ -147,7 +147,7 @@ public class realnpc_0controller : MonoBehaviour, Interactable
             StartCoroutine(DialogueManager.Instance.ShowDialogue(dialogue2, () => {
                 idleTimer = 0f;
                 state = NPCState.Idle;
-                DayTracker.Instance.Day++;
+                DayTracker.Instance.Day = 3;
             }));
         }
         else if (state == NPCState.Idle && gameObject.CompareTag("Spy") && DayTracker.Instance.Day == 3)
@@ -158,7 +158,6 @@ public class realnpc_0controller : MonoBehaviour, Interactable
             StartCoroutine(DialogueManager.Instance.ShowDialogue(dialogue3, () => {
                 idleTimer = 0f;
                 state = NPCState.Idle;
-                DayTracker.Instance.Day++;
             }));
         }
     }

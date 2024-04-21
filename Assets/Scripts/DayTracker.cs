@@ -49,7 +49,7 @@ public class DayTracker : MonoBehaviour
     public void InstantiateAgain()
     {
         // starting position in awake
-        if (AudioManager.i.musicPlayer.clip != AudioManager.i.dayMusicTracks[DayTracker.Instance.Day])
+        if (DayTracker.Instance.Day < 3 && AudioManager.i.musicPlayer.clip != AudioManager.i.dayMusicTracks[DayTracker.Instance.Day])
             AudioManager.i.PlayDailyMusic();
 
         // check day and scene name
@@ -70,6 +70,7 @@ public class DayTracker : MonoBehaviour
         }
         else if (DayTracker.Instance.Day == 3 && UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Starting")
         {
+            Debug.Log("Day 3");
             spy.SetActive(true);
             endScreenTrigger.SetActive(true);
             spy.transform.position = new Vector3(39, 4.4f, 0);
