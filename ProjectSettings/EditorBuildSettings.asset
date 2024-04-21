@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Library.unity
     guid: 0d1834bb429fb4632be3a857fcb11d55
+  - enabled: 1
+    path: Assets/Scenes/LabBottomFloor.unity
+    guid: ca3f0663dac72458fa62fb7839d029ed
   m_configObjects: {}
