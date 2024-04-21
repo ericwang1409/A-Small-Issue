@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Cutscene : MonoBehaviour
+public class Cutscene : MonoBehaviour, IPlayerTriggerable
 {
     [SerializeReference]
     [SerializeField] List<CutsceneAction> actions;
+
+    public bool TriggerRepeatedly => false;
 
     public IEnumerator Play()
     {
@@ -23,5 +25,12 @@ public class Cutscene : MonoBehaviour
     {
         action.Name = action.GetType().ToString();
         actions.Add(action);
+    }
+
+    public void OnPlayerTriggered(PlayerController player)
+    {
+        Debug.Log("here");
+        player.Character.Animator.IsMoving = false;
+        StartCoroutine(Play());
     }
 }
