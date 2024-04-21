@@ -15,7 +15,7 @@ public class NewspaperText : MonoBehaviour
 
     void Start()
     {
-        print("started");
+        //print("started");
         RefreshNewspaper();
     }
 
