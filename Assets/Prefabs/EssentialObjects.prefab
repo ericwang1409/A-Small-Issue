@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1037394883181378364}
-  - component: {fileID: 5615286626033479314}
   m_Layer: 0
   m_Name: Newspaper
   m_TagString: Untagged
@@ -34,22 +33,6 @@ Transform:
   - {fileID: 6590849818890080113}
   m_Father: {fileID: 7008418508833104251}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5615286626033479314
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1028598340877500465}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b9e64088de0948e2b2c21ccb7cd98e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  title1: {fileID: 1740003185498274837}
-  title2: {fileID: 4496120877287780863}
-  title3: {fileID: 9112418412365604982}
-  headline: {fileID: 6455261316907180652}
 --- !u!1 &1279419861934035247
 GameObject:
   m_ObjectHideFlags: 0
@@ -296,6 +279,7 @@ GameObject:
   - component: {fileID: 8551558834310433205}
   - component: {fileID: 4215184012471902203}
   - component: {fileID: 4717964181856733779}
+  - component: {fileID: 2163044059051066367}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -332,7 +316,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerController: {fileID: 7895477413407607916}
   dialogueManager: {fileID: 0}
-  newspaperManager: {fileID: 5615286626033479314}
+  newspaperManager: {fileID: 2163044059051066367}
+  actualNewspaper: {fileID: 1028598340877500465}
   worldCamera: {fileID: 5331943556758187666}
   state: 0
   day: 0
@@ -393,6 +378,22 @@ MonoBehaviour:
   grunt: {fileID: 0}
   townNPC: {fileID: 0}
   endScreenTrigger: {fileID: 4318326035227966225}
+--- !u!114 &2163044059051066367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2497160632573886859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b9e64088de0948e2b2c21ccb7cd98e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title1: {fileID: 1740003185498274837}
+  title2: {fileID: 4496120877287780863}
+  title3: {fileID: 9112418412365604982}
+  headline: {fileID: 6455261316907180652}
 --- !u!1 &3463939485608989424
 GameObject:
   m_ObjectHideFlags: 0

@@ -19,6 +19,7 @@ public class GameController : MonoBehaviour
     [SerializeField] DialogueManager dialogueManager;
     GameState stateBeforePause;
     [SerializeField] NewspaperText newspaperManager;
+    public GameObject actualNewspaper;
     [SerializeField] Camera worldCamera;
 
     public GameState state;
@@ -46,7 +47,7 @@ public class GameController : MonoBehaviour
     void EndNewspaper()
     {
         state = GameState.FreeRoam;
-        newspaperManager.gameObject.SetActive(false);
+        actualNewspaper.SetActive(false);
         worldCamera.gameObject.SetActive(true);
     }
 
@@ -72,7 +73,7 @@ public class GameController : MonoBehaviour
         }
         else if (state == GameState.Newspaper)
         {
-            newspaperManager.gameObject.SetActive(true);
+            actualNewspaper.SetActive(true);
             worldCamera.gameObject.SetActive(false);
             newspaperManager.HandleUpdate();
         }
