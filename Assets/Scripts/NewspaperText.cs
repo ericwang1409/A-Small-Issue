@@ -28,7 +28,7 @@ public class NewspaperText : MonoBehaviour
     // Start is called before the first frame update
     public void RefreshNewspaper()
     {
-        Debug.Log("refreshing newspaper");
+        //Debug.Log("refreshing newspaper");
         if (DayTracker.Instance.Day == 0)
         {
             title1.text = "NEW AI DEVELOPMENTS @ LAB";

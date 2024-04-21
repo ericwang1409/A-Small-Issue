@@ -16,7 +16,7 @@ public class PlayerHouseSign : MonoBehaviour, Interactable
         // Ensure that playerHouseDialogue is assigned
         if (playerHouseDialogue == null)
         {
-            Debug.LogError("PlayerHouseDialogue is not assigned in the Inspector");
+            //Debug.LogError("PlayerHouseDialogue is not assigned in the Inspector");
             yield break; // Stop the coroutine if there's no dialogue assigned
         }
 

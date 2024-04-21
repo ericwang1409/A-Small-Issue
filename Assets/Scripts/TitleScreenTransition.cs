@@ -18,7 +18,7 @@ public class TitleScreenManager : MonoBehaviour
         }
         else
         {
-            Debug.LogError("TitleCrawl script not set on TitleScreenManager.");
+            //Debug.LogError("TitleCrawl script not set on TitleScreenManager.");
         }
     }
 }

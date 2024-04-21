@@ -26,7 +26,7 @@ public class AudioManager : MonoBehaviour
 
     private AudioClip SelectMusicForDay(int day) {
 
-        Debug.Log("select called");
+        //Debug.Log("select called");
         if (dayMusicTracks.Count == 0) {
             //Debug.LogWarning("No music tracks are assigned");
             return null;

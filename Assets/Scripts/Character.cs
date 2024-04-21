@@ -86,7 +86,7 @@ public class Character : MonoBehaviour
             animator.MoveX = Mathf.Clamp(xdiff, -1f, 1f);
             animator.MoveY = Mathf.Clamp(ydiff, -1f, 1f);
         } else {
-            Debug.LogError("Character can only look in straight lines");
+            //Debug.LogError("Character can only look in straight lines");
         }
     }
 

@@ -37,7 +37,7 @@ public class DayTracker : MonoBehaviour
 
     private void OnDayChanged()
     {
-        Debug.Log($"Day changed to: {_day}");
+       //Debug.Log($"Day changed to: {_day}");
 
         // spy.transform.position = new Vector3(0, 0, 0);
     }
