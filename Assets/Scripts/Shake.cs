@@ -45,6 +45,8 @@ public class CameraShaker : MonoBehaviour
         float endAlpha = 1f;
         float elapsedTime = 0f;
 
+        AudioManager.i.PlayDailyMusic();
+
         //Debug.Log("Starting Fade to Black");
 
         if (!fadeImage.gameObject.activeInHierarchy)
@@ -60,7 +62,7 @@ public class CameraShaker : MonoBehaviour
             yield return null;
         }
 
-        // actions once done fading
+        
     }
 }
 
