@@ -175,8 +175,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25df7d16410a24895a9177e9cd49a3b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicPlayer: {fileID: 0}
-  sfxPlayer: {fileID: 0}
+  musicPlayer: {fileID: 8252186033912544089}
+  sfxPlayer: {fileID: 5149396332553893396}
+  dayMusicTracks:
+  - {fileID: 8300000, guid: 0b6a3335b6add4ceaadd2249414791b5, type: 3}
+  - {fileID: 8300000, guid: e1f0bdb99d55d43b1a8d38df146a8d76, type: 3}
+  - {fileID: 8300000, guid: 2cc4c7041113f48b89417f32e02bd85f, type: 3}
 --- !u!1 &2383226519087136402
 GameObject:
   m_ObjectHideFlags: 0
@@ -1349,7 +1353,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 2cc4c7041113f48b89417f32e02bd85f, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 0.359
   m_Pitch: 1
