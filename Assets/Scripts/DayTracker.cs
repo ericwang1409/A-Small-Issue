@@ -59,17 +59,17 @@ public class DayTracker : MonoBehaviour
         if (DayTracker.Instance.Day == 0 && UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Library")
         {
             spy.SetActive(true);
-            spy.transform.position = new Vector3(0, 5, 0);
+            spy.transform.position = new Vector3(0.5f, 4.8f, 0);
         }
         else if (DayTracker.Instance.Day == 1 && UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Library")
         {
             spy.SetActive(true);
-            spy.transform.position = new Vector3(4.4f, 3.6f, 0);
+            spy.transform.position = new Vector3(4.5f, 3.8f, 0);
         }
         else if ((DayTracker.Instance.Day == 2 || DayTracker.Instance.Day == 3) && UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Starting")
         {
             spy.SetActive(true);
-            spy.transform.position = new Vector3(-3.2f, 0.8f, 0);
+            spy.transform.position = new Vector3(-3.5f, 0.5f, 0);
         }
         else if (DayTracker.Instance.Day == 4 && UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Starting")
         {
