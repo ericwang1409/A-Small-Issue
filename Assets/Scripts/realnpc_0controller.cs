@@ -7,7 +7,10 @@ using UnityEngine;
 public class realnpc_0controller : MonoBehaviour, Interactable
 {
     // realnpc_0 displays its dialogue when interacted with
-    [SerializeField] Dialogue dialogue;
+    [SerializeField] Dialogue dialogue0;
+    [SerializeField] Dialogue dialogue1;
+    [SerializeField] Dialogue dialogue2;
+    [SerializeField] Dialogue dialogue3;
     [SerializeField] List<Vector2> movementPattern;
     [SerializeField] float timeBetweenPattern;
     [SerializeField] List<Sprite> sprites;
@@ -63,12 +66,42 @@ public class realnpc_0controller : MonoBehaviour, Interactable
     }
 
     public void Interact(Transform initiator) {
-        if (state == NPCState.Idle && !gameObject.CompareTag("Newspaper Boy"))
+        if (state == NPCState.Idle && gameObject.CompareTag("Untagged") && DayTracker.Instance.Day == 0)
         {
             state = NPCState.Dialogue;
             character.LookTowards(initiator.position);
 
-            StartCoroutine(DialogueManager.Instance.ShowDialogue(dialogue, () => {
+            StartCoroutine(DialogueManager.Instance.ShowDialogue(dialogue0, () => {
+                idleTimer = 0f;
+                state = NPCState.Idle;
+            }));
+        }
+        else if (state == NPCState.Idle && gameObject.CompareTag("Untagged") && DayTracker.Instance.Day == 1)
+        {
+            state = NPCState.Dialogue;
+            character.LookTowards(initiator.position);
+
+            StartCoroutine(DialogueManager.Instance.ShowDialogue(dialogue1, () => {
+                idleTimer = 0f;
+                state = NPCState.Idle;
+            }));
+        }
+        else if (state == NPCState.Idle && gameObject.CompareTag("Untagged") && DayTracker.Instance.Day == 2)
+        {
+            state = NPCState.Dialogue;
+            character.LookTowards(initiator.position);
+
+            StartCoroutine(DialogueManager.Instance.ShowDialogue(dialogue2, () => {
+                idleTimer = 0f;
+                state = NPCState.Idle;
+            }));
+        }
+        else if (state == NPCState.Idle && gameObject.CompareTag("Untagged") && DayTracker.Instance.Day == 3)
+        {
+            state = NPCState.Dialogue;
+            character.LookTowards(initiator.position);
+
+            StartCoroutine(DialogueManager.Instance.ShowDialogue(dialogue3, () => {
                 idleTimer = 0f;
                 state = NPCState.Idle;
             }));
@@ -78,10 +111,54 @@ public class realnpc_0controller : MonoBehaviour, Interactable
             state = NPCState.Dialogue;
             character.LookTowards(initiator.position);
 
-            StartCoroutine(DialogueManager.Instance.ShowDialogue(dialogue, () => {
+            StartCoroutine(DialogueManager.Instance.ShowDialogue(dialogue0, () => {
                 idleTimer = 0f;
                 state = NPCState.Idle;
                 GameController.Instance.state = GameState.Newspaper;
+            }));
+        }
+        
+        else if (state == NPCState.Idle && gameObject.CompareTag("Spy") && DayTracker.Instance.Day == 0)
+        {
+            state = NPCState.Dialogue;
+            character.LookTowards(initiator.position);
+
+            StartCoroutine(DialogueManager.Instance.ShowDialogue(dialogue0, () => {
+                idleTimer = 0f;
+                state = NPCState.Idle;
+                DayTracker.Instance.Day++;
+            }));
+        } else if (state == NPCState.Idle && gameObject.CompareTag("Spy") && DayTracker.Instance.Day == 1)
+        {
+            state = NPCState.Dialogue;
+            character.LookTowards(initiator.position);
+
+            StartCoroutine(DialogueManager.Instance.ShowDialogue(dialogue1, () => {
+                idleTimer = 0f;
+                state = NPCState.Idle;
+                DayTracker.Instance.Day++;
+            }));
+        }
+        else if (state == NPCState.Idle && gameObject.CompareTag("Spy") && DayTracker.Instance.Day == 2)
+        {
+            state = NPCState.Dialogue;
+            character.LookTowards(initiator.position);
+
+            StartCoroutine(DialogueManager.Instance.ShowDialogue(dialogue2, () => {
+                idleTimer = 0f;
+                state = NPCState.Idle;
+                DayTracker.Instance.Day++;
+            }));
+        }
+        else if (state == NPCState.Idle && gameObject.CompareTag("Spy") && DayTracker.Instance.Day == 3)
+        {
+            state = NPCState.Dialogue;
+            character.LookTowards(initiator.position);
+
+            StartCoroutine(DialogueManager.Instance.ShowDialogue(dialogue3, () => {
+                idleTimer = 0f;
+                state = NPCState.Idle;
+                DayTracker.Instance.Day++;
             }));
         }
     }

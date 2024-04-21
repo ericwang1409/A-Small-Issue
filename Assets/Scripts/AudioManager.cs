@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-   [SerializeField] AudioSource musicPlayer;
+    [SerializeField] public AudioSource musicPlayer;
     [SerializeField] AudioSource sfxPlayer;
-    [SerializeField] private List<AudioClip> dayMusicTracks = new List<AudioClip>();
+    [SerializeField] public List<AudioClip> dayMusicTracks = new List<AudioClip>();
 
     public static AudioManager i {get; private set; }
     private void Awake() {
-            i = this;
+        i = this;
     }
 
     void Start() {
@@ -18,7 +18,7 @@ public class AudioManager : MonoBehaviour
     }
 
     public void PlayDailyMusic() {
-        int currentDay = GameController.Instance.day; 
+        int currentDay = DayTracker.Instance.Day; 
         //Debug.Log("current day:" + currentDay);
         AudioClip clip = SelectMusicForDay(currentDay);
         PlayMusic(clip, true);

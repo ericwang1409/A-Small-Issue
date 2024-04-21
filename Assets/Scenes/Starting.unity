@@ -202,9 +202,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a623f1687671a4dc19122f465e46f3f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
+  dialogue0:
     lines:
-    - Hey! Check out the news today!
+    - Hey! I've got the news, hot off the presses!
+  dialogue1:
+    lines: []
+  dialogue2:
+    lines: []
+  dialogue3:
+    lines: []
   movementPattern: []
   timeBetweenPattern: 3
   sprites:
@@ -84384,10 +84390,10 @@ MonoBehaviour:
       type: {class: MoveActorAction, ns: , asm: Assembly-CSharp}
       data:
         name: MoveActorAction
-        character: {fileID: 1579029657}
+        character: {fileID: 0}
         movePattern:
         - {x: -8.5, y: 0}
-        - {x: 0, y: 3}
+        - {x: 0, y: 4}
 --- !u!4 &195175005
 Transform:
   m_ObjectHideFlags: 0
@@ -84890,74 +84896,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1579029656
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 13017586047835455, guid: 2d84a2e1fc6dc4123ac98d01a04542be, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 39
-      objectReference: {fileID: 0}
-    - target: {fileID: 13017586047835455, guid: 2d84a2e1fc6dc4123ac98d01a04542be, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 13017586047835455, guid: 2d84a2e1fc6dc4123ac98d01a04542be, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 13017586047835455, guid: 2d84a2e1fc6dc4123ac98d01a04542be, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 13017586047835455, guid: 2d84a2e1fc6dc4123ac98d01a04542be, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 13017586047835455, guid: 2d84a2e1fc6dc4123ac98d01a04542be, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 13017586047835455, guid: 2d84a2e1fc6dc4123ac98d01a04542be, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 13017586047835455, guid: 2d84a2e1fc6dc4123ac98d01a04542be, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 13017586047835455, guid: 2d84a2e1fc6dc4123ac98d01a04542be, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 13017586047835455, guid: 2d84a2e1fc6dc4123ac98d01a04542be, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1657748199139512454, guid: 2d84a2e1fc6dc4123ac98d01a04542be, type: 3}
-      propertyPath: m_Name
-      value: realnpc_0 (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2d84a2e1fc6dc4123ac98d01a04542be, type: 3}
---- !u!114 &1579029657 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4199731216844922523, guid: 2d84a2e1fc6dc4123ac98d01a04542be, type: 3}
-  m_PrefabInstance: {fileID: 1579029656}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9071e8ec27c6143359a6d74d1a1f4419, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1940972527
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -85201,10 +85139,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a623f1687671a4dc19122f465e46f3f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-    lines:
-    - AI's gonna end the world, son.
-    - Would be a damn shame you didn't do nothin' about it.
+  dialogue0:
+    lines: []
+  dialogue1:
+    lines: []
+  dialogue2:
+    lines: []
+  dialogue3:
+    lines: []
   movementPattern: []
   timeBetweenPattern: 3
   sprites:
@@ -85378,4 +85320,3 @@ SceneRoots:
   - {fileID: 1940972527}
   - {fileID: 1410902434}
   - {fileID: 195175005}
-  - {fileID: 1579029656}

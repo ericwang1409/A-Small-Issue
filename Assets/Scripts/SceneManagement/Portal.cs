@@ -28,6 +28,7 @@ public class Portal : MonoBehaviour, IPlayerTriggerable
         player.transform.position = destPortal.SpawnPoint.position;
 
         GameController.Instance.PauseGame(false);
+        DayTracker.Instance.InstantiateAgain();
 
         Destroy(gameObject);
     }
