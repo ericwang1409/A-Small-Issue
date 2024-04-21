@@ -13,6 +13,12 @@ public class Cutscene : MonoBehaviour, IPlayerTriggerable
     {
         GameController.Instance.StartCutsceneState();
 
+        CameraShaker cameraShaker = FindObjectOfType<CameraShaker>();
+        if (cameraShaker != null)
+        {
+            cameraShaker.StartShaking();
+        }
+
         foreach (var action in actions)
         {
             yield return action.Play();
@@ -27,10 +33,12 @@ public class Cutscene : MonoBehaviour, IPlayerTriggerable
         actions.Add(action);
     }
 
+
     public void OnPlayerTriggered(PlayerController player)
     {
-        Debug.Log("here");
+        // Debug.Log("here");
         player.Character.Animator.IsMoving = false;
         StartCoroutine(Play());
+
     }
 }
