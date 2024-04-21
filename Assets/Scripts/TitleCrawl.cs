@@ -29,7 +29,7 @@ public class TitleCrawl : MonoBehaviour
             crawlText.text += letter; 
             yield return new WaitForSeconds(letterPause);
         }
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(2);
         SceneManager.LoadScene(mainGameSceneName); 
     }
 }
