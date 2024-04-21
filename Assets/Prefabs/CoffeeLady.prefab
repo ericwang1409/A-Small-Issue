@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3830169219069462219
+--- !u!1 &7491192585428709661
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,42 +8,42 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5363975791747961120}
-  - component: {fileID: 3185127403919683628}
-  - component: {fileID: 6745730097626237130}
-  - component: {fileID: 4174425501377896737}
-  - component: {fileID: 7959405160104887246}
-  - component: {fileID: 5375815028056945682}
-  - component: {fileID: 6979470693050583227}
+  - component: {fileID: 3081952303899235117}
+  - component: {fileID: 8593564624069931730}
+  - component: {fileID: 3752237371988744342}
+  - component: {fileID: 1312964953895779740}
+  - component: {fileID: 7984062733463499430}
+  - component: {fileID: 7088093328036934873}
+  - component: {fileID: 6811775836222050557}
   m_Layer: 9
-  m_Name: Spy
-  m_TagString: Spy
+  m_Name: CoffeeLady
+  m_TagString: CoffeeLady
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &5363975791747961120
+  m_IsActive: 1
+--- !u!4 &3081952303899235117
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3830169219069462219}
+  m_GameObject: {fileID: 7491192585428709661}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.03, y: 4.75, z: -0.05963314}
+  m_LocalPosition: {x: 1.392895, y: 0.072648406, z: -0.05963314}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &3185127403919683628
+--- !u!212 &8593564624069931730
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3830169219069462219}
+  m_GameObject: {fileID: 7491192585428709661}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -78,7 +78,7 @@ SpriteRenderer:
   m_SortingLayerID: 1769420355
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1977007564, guid: 71881522a6c3642dda2ba456c87e66ce, type: 3}
+  m_Sprite: {fileID: -320689183, guid: f972160540d834c9a990cff682a62f48, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -89,14 +89,14 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &6745730097626237130
+--- !u!50 &3752237371988744342
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3830169219069462219}
+  m_GameObject: {fileID: 7491192585428709661}
   m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -116,13 +116,13 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &4174425501377896737
+--- !u!61 &1312964953895779740
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3830169219069462219}
+  m_GameObject: {fileID: 7491192585428709661}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -161,13 +161,13 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.8055061, y: 1.1472187}
   m_EdgeRadius: 0
---- !u!114 &7959405160104887246
+--- !u!114 &7984062733463499430
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3830169219069462219}
+  m_GameObject: {fileID: 7491192585428709661}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a623f1687671a4dc19122f465e46f3f6, type: 3}
@@ -175,53 +175,50 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue0:
     lines:
-    - Hey son!
-    - You know anything about that AI lab northeast of town?
+    - Wow! You're resume's amazing.
+    - I can tell you'd be a great fit for the engineer role!
+    - You got the job.
+    - We're gonna have you read up on some ML in the library
+    - and then come to the lab!
   dialogue1:
     lines:
-    - Gee... nice books!
+    - Hope the job's going okay!
   dialogue2:
     lines:
-    - Huff...
-    - Huff...
+    - Hello!
   dialogue3:
-    lines:
-    - Things are moving fast...
-    - I hope my kids aren't as scared as I am
+    lines: []
   movementPattern: []
   timeBetweenPattern: 0
   sprites:
-  - {fileID: -1977007564, guid: 71881522a6c3642dda2ba456c87e66ce, type: 3}
---- !u!114 &5375815028056945682
+  - {fileID: -320689183, guid: f972160540d834c9a990cff682a62f48, type: 3}
+--- !u!114 &7088093328036934873
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3830169219069462219}
+  m_GameObject: {fileID: 7491192585428709661}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9071e8ec27c6143359a6d74d1a1f4419, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
---- !u!114 &6979470693050583227
+--- !u!114 &6811775836222050557
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3830169219069462219}
+  m_GameObject: {fileID: 7491192585428709661}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 02afc203db2e046f88a99c5d0ba87312, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   walkDownSprites:
-  - {fileID: -1977007564, guid: 71881522a6c3642dda2ba456c87e66ce, type: 3}
-  - {fileID: 1603297666, guid: 71881522a6c3642dda2ba456c87e66ce, type: 3}
-  - {fileID: -731796804, guid: 71881522a6c3642dda2ba456c87e66ce, type: 3}
-  - {fileID: 930544832, guid: 71881522a6c3642dda2ba456c87e66ce, type: 3}
+  - {fileID: -320689183, guid: f972160540d834c9a990cff682a62f48, type: 3}
   walkUpSprites:
   - {fileID: 1048445414, guid: 71881522a6c3642dda2ba456c87e66ce, type: 3}
   - {fileID: 1501878936, guid: 71881522a6c3642dda2ba456c87e66ce, type: 3}

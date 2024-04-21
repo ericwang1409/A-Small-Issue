@@ -174,17 +174,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue0:
-    lines: []
+    lines:
+    - I'm busy... come back later.
   dialogue1:
-    lines: []
+    lines:
+    - 'Welcome to the lab! '
+    - We're working on amazing new AI technology!
+    - I want you to train a 10 trillion parameter model, it's our next system.
+    - Go work on it on the computer in the lab.
   dialogue2:
-    lines: []
+    lines:
+    - I think we might be being monitored...
+    - We need to finish our big training run, but we can't do it here.
+    - Train the model at home, and then come back to the lab.
+    - Be quick! And don't let anyone see you.
   dialogue3:
     lines: []
   movementPattern: []
   timeBetweenPattern: 0
   sprites:
-  - {fileID: -1977007564, guid: 71881522a6c3642dda2ba456c87e66ce, type: 3}
+  - {fileID: -1377262565, guid: d85344f9619cc429cb693abd94a19118, type: 3}
 --- !u!114 &2558413949854553307
 MonoBehaviour:
   m_ObjectHideFlags: 0

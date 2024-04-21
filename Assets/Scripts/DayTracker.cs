@@ -11,6 +11,7 @@ public class DayTracker : MonoBehaviour
     public GameObject spy;
     public GameObject scientist;
     public GameObject grunt;
+    public GameObject coffeeLady;
     public GameObject townNPC;
     public GameObject endScreenTrigger;
 
@@ -78,6 +79,38 @@ public class DayTracker : MonoBehaviour
         else
         {
             spy.SetActive(false);
+        }
+
+        // scientist
+        if (DayTracker.Instance.Day >= 0 && DayTracker.Instance.Day <= 3 && UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "LabTopFloor")
+        {
+            scientist.SetActive(true);
+            scientist.transform.position = new Vector3(-4.5f, 3.8f, 0);
+        }
+        else
+        {
+            scientist.SetActive(false);
+        }
+
+        // grunt
+        if (DayTracker.Instance.Day >= 0 && DayTracker.Instance.Day <= 3 && UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "LabBottomFloor")
+        {
+            grunt.SetActive(true);
+            grunt.transform.position = new Vector3(-0.5f, -0.2f, 0);
+        }
+        else
+        {
+            grunt.SetActive(false);
+        }
+
+        if (DayTracker.Instance.Day >= 0 && DayTracker.Instance.Day <= 3 && UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "CoffeeShop")
+        {
+            coffeeLady.SetActive(true);
+            coffeeLady.transform.position = new Vector3(3.5f, 3f, 0);
+        }
+        else
+        {
+            coffeeLady.SetActive(false);
         }
     }
 
