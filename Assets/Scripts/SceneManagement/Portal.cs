@@ -29,6 +29,7 @@ public class Portal : MonoBehaviour, IPlayerTriggerable
 
         GameController.Instance.PauseGame(false);
         DayTracker.Instance.InstantiateAgain();
+        NewspaperText.Instance.RefreshNewspaper();
 
         Destroy(gameObject);
     }
