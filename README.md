@@ -12,3 +12,5 @@ The primary challenge of the game was coordinating the massive codebase we were 
 Before we created _A Small Issue_, the three of us had no experience utilizing C-sharp or manipulating 2D sprites. Now, we've managed to create a game that tracks flags and events, contains NPCs with various lines of dialogue, and even some cutscenes. We even managed to create multiple fades and personalized graphics for the game that cannot be found elsewhere. We all got much better at game design, level design, story writing, and large-scale collaboration.
 ## What's next for _A Small Issue_
 In the future, we would like to add more levels and challenges to _A Small Issue_. We were thinking about expanding the environment by building computer interactions where the player could potentially utilize their full keyboard. We also think that we could build off the emotional story beats we were trying to build by including more interactive NPCs that the player would recognize i.e. friends, family, etc...
+
+Made with Unity 2022.3.25f
